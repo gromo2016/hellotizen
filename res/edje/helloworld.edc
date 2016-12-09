@@ -1,0 +1,25 @@
+collections {
+   group { name: "main";
+      parts {
+         part { name: "txt_title";
+            type: TEXT;
+            mouse_events: 0;
+            description { state: "" 0.0;
+               text { text: "Hello Tizen"; font: "Tizen:style=regular"; size: 20; min: 1 1; align: 0.5 0; }
+               color: 0 255 255 255;
+            }
+         }
+         part { name: "rect_osYT";
+            type: RECT;
+            scale: 1;
+            description { state: "default" 0.0;
+               color: 0 136 170 255;
+               visible: 1;
+               align: 0.5 0.5;
+               rel1.relative: 0.25 0.25;
+               rel2.relative: 0.75 0.75;
+            }
+         }
+      }
+   }
+}
